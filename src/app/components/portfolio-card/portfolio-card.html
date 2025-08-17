@@ -1,0 +1,15 @@
+<div class="portfolio-card__image-wrap">
+    @if (image()) {
+    <img class="portfolio-card__image" [src]="image()" [alt]="name()" />
+    } @else {
+    {{ name() }}
+    }
+</div>
+
+<div class="portfolio-card__content">
+    <h3 class="portfolio-card__name">{{ name() }}</h3>
+
+    @if (description()) {
+    <p class="portfolio-card__desc" [innerHTML]="description()"></p>
+    }
+</div>

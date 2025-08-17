@@ -1,0 +1,16 @@
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+        gap: 1.5rem;
+    }
+
+    a[href] {
+        text-decoration: none;
+        color: var(--bg);
+    }
+}

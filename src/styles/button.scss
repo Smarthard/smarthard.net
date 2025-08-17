@@ -1,0 +1,34 @@
+.btn {
+    display: inline-block;
+    padding: 1rem 2.25rem;
+    text-decoration: none;
+    border-radius: 2rem;
+    transition: all 0.3s ease-in-out;
+    color: var(--light);
+    background-color: transparent;
+    border: 2px solid var(--light);
+
+    &:hover {
+        background-color: var(--accent);
+    }
+
+    &--primary {
+        color: var(--light);
+        background-color: var(--primary);
+        border: 2px solid var(--primary);
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
+
+    &--accent {
+        color: var(--light);
+        background-color: var(--accent);
+        border: 2px solid var(--accent);
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
+}

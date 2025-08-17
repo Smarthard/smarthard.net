@@ -1,0 +1,17 @@
+.color {
+    &--primary {
+        color: var(--primary);
+    }
+
+    &--accent {
+        color: var(--accent);
+    }
+
+    &--light {
+        color: var(--light);
+    }
+
+    &--bg {
+        color: var(--bg);
+    }
+}

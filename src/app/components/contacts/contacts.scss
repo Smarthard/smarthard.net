@@ -1,0 +1,19 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .email {
+        font-size: 1.4rem;
+        color: var(--accent);
+        text-decoration: none;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+
+        margin-top: 2rem;
+    }
+}

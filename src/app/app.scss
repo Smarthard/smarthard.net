@@ -1,0 +1,41 @@
+.section {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    padding: 100px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+    &__content {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    &--fullscreen {
+        height: 100vh;
+        padding: 0;
+    }
+}
+
+#me {
+    color: var(--light);
+    background: linear-gradient(293deg, #21a150, #1451ca, #79c2b0);
+    background-size: 180% 180%;
+    animation: gradient-animation 15s ease infinite;
+    // backdrop-filter: blur(1.5rem);
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

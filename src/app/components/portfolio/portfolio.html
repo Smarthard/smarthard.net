@@ -1,0 +1,9 @@
+<h2>Последние проекты</h2>
+
+<div class="portfolio-grid">
+    @for (item of portfolioItems; track $index) {
+    <a target="_blank" [href]="item.link">
+        <app-portfolio-card [name]="item.name" [description]="item.description" [image]="item.image" />
+    </a>
+    }
+</div>

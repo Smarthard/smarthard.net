@@ -1,0 +1,34 @@
+.portfolio-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light);
+    overflow: hidden;
+    border-radius: .75rem;
+    border: 1px solid var(--light);
+
+    &__image-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20rem;
+    }
+
+    &__image {
+        object-fit: fill;
+        max-height: 20rem;
+    }
+
+    &__content {
+        padding: 1rem;
+    }
+
+    &__name {
+        text-align: left;
+    }
+
+    &__desc {
+        font-size: .9rem;
+        text-align: justify;
+        opacity: .8;
+    }
+}
