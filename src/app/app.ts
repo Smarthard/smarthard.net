@@ -1,7 +1,6 @@
 import {
     ChangeDetectionStrategy,
     Component,
-    signal,
     ViewEncapsulation,
 } from '@angular/core';
 
@@ -18,6 +17,4 @@ import { Portfolio } from "./components/portfolio";
     encapsulation: ViewEncapsulation.None,
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class App {
-    protected readonly title = signal('smarthard.net');
-}
+export class App {}
