@@ -17,6 +17,8 @@ const browserDistFolder = join(import.meta.dirname, '../browser');
 const app = express();
 const angularApp = new AngularNodeAppEngine();
 
+app.use(logMiddleware(logger));
+
 /**
  * Serve static files from /browser
  */
@@ -40,8 +42,6 @@ app.use((req, res, next) => {
         )
         .catch(next);
 });
-
-app.use(logMiddleware(logger));
 
 /**
  * Start the server if this module is the main entry point.
