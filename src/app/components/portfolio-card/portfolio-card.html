@@ -1,6 +1,6 @@
 <div class="portfolio-card__image-wrap">
     @if (image()) {
-    <img class="portfolio-card__image" [src]="image()" [alt]="name()" />
+    <img class="portfolio-card__image" [src]="image()" [alt]="name()" width="512px" height="320px" />
     } @else {
     {{ name() }}
     }
